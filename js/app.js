@@ -6,7 +6,8 @@ var rand = document.querySelector('.computer');
 var input = document.querySelector('input') ;
 
 const NUMBER =()=>{ 
-  const computer = Math.floor(Math.random() * 100) + 0
+  const computer = Math.floor(Math.random() * 100) + 0;
+  let number = input.value;
   if (number == "" || number == undefined || number == null ){
     output.innerHTML = "Enter a valid number"
     return
@@ -28,8 +29,8 @@ const NUMBER =()=>{
     body.style.background = '-webkit-linear-gradient(45deg, rgb(0, 3, 196), rgb(6, 108, 192))'
   } else {output.innerHTML = "Guess a Number from 0 - 100"}
 
-  you.innerHTML= `you guessed ${number}`
-  rand.innerHTML= `The number was ${computer}`
+  you.innerHTML= `you guessed: <b>${number}</b>`
+  rand.innerHTML= `The number was: <b>${computer}</b>`
 }
 
 var btn = document.querySelector('.button');

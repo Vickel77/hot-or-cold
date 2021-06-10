@@ -54,6 +54,13 @@ input#number {
 .message {
   padding-top: 20px;
 }
+.status {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
 .enter-key {
   padding: 15px;
   border: 1.5px solid white;
