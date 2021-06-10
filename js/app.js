@@ -4,10 +4,9 @@ var body = document.querySelector('body');
 var you = document.querySelector('.you');
 var rand = document.querySelector('.computer');
 var input = document.querySelector('input') ;
-const computer = Math.floor(Math.random() * 100) + 0
+
 const NUMBER =()=>{ 
-  number = input.value
-  console.log(number)
+  const computer = Math.floor(Math.random() * 100) + 0
   if (number == "" || number == undefined || number == null ){
     output.innerHTML = "Enter a valid number"
     return
