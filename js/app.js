@@ -1,16 +1,15 @@
-var number;
-
 
 var output = document.querySelector("#display");
 var body = document.querySelector('body');
 var you = document.querySelector('.you');
 var rand = document.querySelector('.computer');
+var input = document.querySelector('input') ;
+const computer = Math.floor(Math.random() * 100) + 0
 const NUMBER =()=>{ 
-  const computer = Math.floor(Math.random() * 100) + 0
-  number = prompt("Guess a number!");
-  console.log(computer)
+  number = input.value
+  console.log(number)
   if (number == "" || number == undefined || number == null ){
-    output.innerHTML = "Guess a Number from 0 - 100"
+    output.innerHTML = "Enter a valid number"
     return
   }
   if (number - computer > 10) {
@@ -33,7 +32,6 @@ const NUMBER =()=>{
   you.innerHTML= `you guessed ${number}`
   rand.innerHTML= `The number was ${computer}`
 }
-NUMBER();
 
 var btn = document.querySelector('.button');
 
